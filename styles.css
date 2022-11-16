@@ -1,0 +1,124 @@
+@import url('https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,700&family=Montserrat:wght@500;700&display=swap');
+
+:root {
+    --Dark_cyan: hsl(158, 36%, 37%);
+    --Cream: hsl(30, 38%, 92%);
+    font-size: 14px;
+    margin: 0;
+    padding: 0;
+    font-family: 'Fraunces', serif;
+}
+
+body {
+    display: grid;
+    place-items: center;
+    margin: 1rem;
+    width: 100%;
+    height: 100vh;
+    background-color: var(--Cream);
+}
+
+.flex {
+    display: flex;
+    margin: 0.5rem 0;
+    gap: 1rem;
+}
+
+.Card {
+    height: 38rem;
+    width: 20rem;
+    /* border: 2px solid black; */
+    border-radius: 1rem;
+    background-color: white;
+}
+
+.image-main {
+    border-top-left-radius: 1rem;
+    border-top-right-radius: 1rem;
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    
+}
+
+.Card-main {
+    padding: 0 1.2rem;
+}
+
+
+.Description {
+    opacity: 50%;
+}
+
+.Preview {
+    opacity: 50%;
+    margin: 10px 0 0;
+    font-size: 13px;
+}
+
+h1 {
+    margin: 10px 0;
+}
+
+button {
+    background-color: transparent;
+    border-radius: 0.5rem;
+    width: calc(100% - 0.00001rem);
+    height: 4rem;
+    background-color: var(--Dark_cyan);
+    color: white;
+}
+
+button:hover {
+    background-color: hsl(158, 36%, 20%);
+}
+
+.price {
+    align-items: center;
+    gap: 3rem;
+}
+
+.main {
+    font-size: 30px;
+    color: var(--Dark_cyan);
+}
+
+.secondary {
+    text-decoration: line-through;
+    opacity: 50%;
+}
+
+.div-button {
+    display: flex;
+    justify-content: center;
+}
+
+@media screen and (min-width: 600px) {
+
+    body {
+        padding: 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .Card {
+        display: flex;
+        width: 40rem;
+        height: 30rem;
+    }
+
+    .image-main {
+        width: 30rem;
+        border-radius: 1rem 0rem 0rem 1rem;
+        height: 100%;
+    }
+
+    .Preview {
+        margin: 2rem 0;
+    }
+    
+    .Card-main {
+        padding: 0 2rem;
+    }
+}
